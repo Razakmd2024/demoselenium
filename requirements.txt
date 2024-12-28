@@ -1,0 +1,6 @@
+selenium
+request
+webdriver_manager
+flask
+flask-restful
+gunicorn
