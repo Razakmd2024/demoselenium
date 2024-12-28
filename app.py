@@ -12,14 +12,14 @@ def download_selenium():
     driver = webdriver.Chrome(service=s)
     driver.get("https://www.google.com/")
     title = driver.title
-    languages = driver.find_element(By.XPATH,"//div[id='SIvCob']").text
+    languages = driver.find_element(By.XPATH,"/html/body/div[1]/div[4]/div[3]/div").text
 
     data = {"PageTitle":title, "Language":languages}
     return data
 
 @app.route("/")
 def home():
-    if (request.methods=='GET'):
+    if (request.method=='GET'):
         return download_selenium()
 
 
