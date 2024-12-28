@@ -1,5 +1,5 @@
 selenium
-request
+packaging
 webdriver_manager
 flask
 flask-restful
