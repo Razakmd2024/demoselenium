@@ -1,4 +1,4 @@
-ARG PORT=5000
+ARG PORT=443
 FROM cypress/browsers:latest
 
 # Install Python and pip
