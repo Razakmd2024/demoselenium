@@ -1,6 +1,6 @@
 selenium
 packaging
-webdriver_manager
+webdriver-manager
 flask
 flask-restful
 gunicorn
