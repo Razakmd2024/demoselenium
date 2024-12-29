@@ -10,6 +10,7 @@ app = Flask(__name__)
 def download_selenium():
     s = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=s)
+    time.sleep(2)
     driver.get("https://www.google.com/")
     title = driver.title
     languages = driver.find_element(By.XPATH,"/html/body/div[1]/div[4]/div[3]/div").text
