@@ -27,7 +27,7 @@ def download_selenium():
     # Fetch data
     driver.get("https://www.google.com/")
     title = driver.title
-    languages = driver.find_element(By.XPATH, "/html/body/div[1]/div[4]/div[3]/div").text
+    languages = driver.find_element(By.XPATH, "//*[@id='SIvCob']").text
     driver.quit()  # Always quit the driver
     
     # Return data as a dictionary
